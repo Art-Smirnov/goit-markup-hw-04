@@ -33,12 +33,12 @@
         </nav>
           <ul class="header-contacts list">
             <li class="item">
-              <a href="mailto:info@devstudio.com" class="link"
+              <a href="mailto:info@devstudio.com" class="mail link"
                 >info@devstudio.com</a
               >
             </li>
             <li class="item">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              <a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a>
             </li>
           </ul>
       </div>
@@ -57,28 +57,28 @@
         <div class="features-container container">
           <h2 class="section-title visually-hidden">Преймущества</h2>
           <ul class="features-list list">
-            <li class="item">
+            <li class="icon-attention item">
               <h3 class="list-title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item">
+            <li class="icon-punctuality  item">
               <h3 class="list-title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
+            <li class="icon-planning item">
               <h3 class="list-title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item">
+            <li class="icon-tech item">
               <h3 class="list-title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -95,21 +95,21 @@
           <ul class="activity-list list">
             <li class="item">
               <img
-                src="./img/programer.jpg"
+                src="./pictures/img/programer.jpg"
                 alt="Программист за роботой"
                 width="370"
               />
             </li>
             <li class="item">
               <img
-                src="./img/designer.jpg"
+                src="./pictures/img/designer.jpg"
                 alt="Веб-дизайнер за роботой над мобильным приложением"
                 width="370"
               />
             </li>
             <li class="item">
               <img
-                src="./img/creative-artist.jpg"
+                src="./pictures/img/creative-artist.jpg"
                 alt="Креативный веб-дизайнер работает с приложением для подбора цветов"
                 width="370"
               />
@@ -121,51 +121,91 @@
       <section class="stuff section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
+
           <ul class="team list">
             <li class="item">
               <img
-                src="./img/demyadenko.jpg"
+                src="./pictures/img/demyadenko.jpg"
                 alt="Парень в очках и коричневой рубаше"
                 width="270"
-              />
-              <h3 class="title">Игорь Демьяненко</h3>
-              <p class="text">Product Designer</p>
+              /> 
+              <div class="info"> 
+                <h3 class="title">Игорь Демьяненко</h3>
+                <p class="text">Product Designer</p>
+
+                <ul class="networks list">
+                  <li class="item" >
+                    <a href="" class="link"></a>
+                  </li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </div>
+             
             </li>
             <li class="item">
               <img
-                src="./img/repina.jpg"
+                src="./pictures/img/repina.jpg"
                 alt="Светловолосая девушка в очках"
                 width="270"
-              />
-              <h3 class="title">Ольга Репина</h3>
-              <p class="text">Frontend Developer</p>
-            </li>
+              /> 
+              <div class="info">
+                <h3 class="title">Ольга Репина</h3>
+                <p class="text">Frontend Developer</p>
+              </div>
+              
+            </li> 
             <li class="item">
               <img
-                src="./img/tarasov.jpg"
+                src="./pictures/img/tarasov.jpg"
                 alt="Парень в голубой рубашке"
                 width="270"
-              />
-              <h3 class="title">Николай Тарасов</h3>
-              <p class="text">Marketing</p>
+              /> 
+              <div class="info"> 
+                <h3 class="title">Николай Тарасов</h3>
+                <p class="text">Marketing</p>
+              </div>
+             
             </li>
             <li class="item">
               <img
-                src="./img/yermakov.jpg"
+                src="./pictures/img/yermakov.jpg"
                 alt="Парень с бородой и в очках"
                 width="270"
-              />
-              <h3 class="title">Михаил Ермаков</h3>
-              <p class="text">UI Designer</p>
+              /> 
+              <div class="info">
+                <h3 class="title">Михаил Ермаков</h3>
+                <p class="text">UI Designer</p>
+              </div>
+              
             </li>
           </ul>
         </div>
       </section>
+
+      <section class="section"> 
+        <div class="container">
+
+            <h2 class="section-title">Постоянные клиенты</h2>
+
+          <ul class="list">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+        
+      </section>
     </main>
     <!-- Подвал -->
-    <footer class="basement">
-      <div class="container">
-        <a href="./index.html" class="footer-logo"
+    <footer >
+      <div class="basement container">
+        <div>
+           <a href="./index.html" class="footer-logo"
           >Web<span class="accent">Studio</span></a
         >
         <address class="footer-contacts">
@@ -185,6 +225,17 @@
             </li>
           </ul>
         </address>
+        </div>
+        <div>
+          <b>присоединяйтесь</b>
+         <ul class="footer-networks list">
+           <li class="item"><a class="link" href=""></a></li>
+           <li><a href=""></a></li>
+           <li><a href=""></a></li>
+           <li><a href=""></a></li>
+         </ul>
+        </div>
+       
       </div>
     </footer>
   </body>

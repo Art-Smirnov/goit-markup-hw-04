@@ -92,16 +92,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
 }
-.header-contacts .link {
-  color: var(--primary-text-color);
 
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
 /* Site nav */
 .site-nav {
   margin-left: 93px;
@@ -140,10 +131,39 @@ img {
   display: flex;
   margin-left: auto;
 }
+
+/* .header-contacts .mail::before {
+  margin-right: 10px;
+  content: '';
+  background-image: url(../pictures/icons/envelope.svg);
+  background-size: contain;
+  width: 16px;
+  height: 12px;
+}
+.header-contacts .tel::before {
+  margin-right: 10px;
+  content: '';
+  background-image: url(../pictures/icons/tel.svg);
+  background-size: contain;
+  width: 10px;
+  height: 16px;
+} */
+
 .header-contacts .link {
   display: block;
+  /* display: inline-flex; */
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-contacts .item + .item {
@@ -156,6 +176,9 @@ img {
 }
 /* Подвал */
 .basement {
+  display: flex;
+  align-items: baseline;
+
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--third-bg-color);
@@ -205,4 +228,17 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
+}
+
+.footer-networks .link {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-image: url(../pictures/icons/footer-insta.png);
+  background-size: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  /* ще треба тут ховер */
 }

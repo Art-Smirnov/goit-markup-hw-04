@@ -4,17 +4,30 @@
 /* акцент #2196F3 */
 /* колір контактів в підвалі rgba(255, 255, 255, 0.6) */
 /* головний колір фона #ffffff */
-/* вторинний колір фона  #2F303A */
-/* додатковий вторинний колір фона #F5F4FA */
+/* вторинний колір фона #F5F4FA  */
+/* третій колір фона #2F303A */
 
 /* Site-hero */
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../pictures/bg-img/bg-Img.jpg);
+
   background-color: var(--third-bg-color);
+  background-position: center;
+  /* outline: 1px solid black; */
 
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
 }
 
 .hero-title {
@@ -48,15 +61,43 @@
 }
 
 /* Преймущества  */
+
 .features {
   padding-bottom: 0px;
 }
+
 .features-list {
   display: flex;
   justify-content: space-between;
 }
+
 .features-list .item {
   width: calc((100% - 90px) / 4);
+}
+
+.features-list .item::before {
+  margin-bottom: 30px;
+  display: block;
+  content: '';
+  height: 120px;
+  outline: 1px solid red;
+
+  /* background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.features-list .icon-attention::before {
+  background-image: url(../pictures/icons/group-1.svg);
+}
+.features-list .icon-punctuality::before {
+  background-image: url(../pictures/icons/group-2.svg);
+}
+.features-list .icon-planning::before {
+  background-image: url(../pictures/icons/group-3.svg);
+}
+.features-list .icon-tech::before {
+  background-image: url(../pictures/icons/group-4.svg);
 }
 
 .features-container .list-title {
@@ -70,28 +111,37 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .features-container .text {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
 }
+
 /* Деятельность */
+
 .activity-list {
   display: flex;
   justify-content: space-between;
 }
+
 /* Персонал */
 
 .stuff {
   background-color: var(--secondary-bg-color);
 }
+
 .team {
   display: flex;
   justify-content: space-between;
 }
-.team img {
-  margin-bottom: 30px;
+
+.team > .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
 }
 
 .team .title {
@@ -113,4 +163,17 @@
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+.team .info {
+  padding-top: 30px;
+  padding-bottom: 16px;
+
+  background: var(--primary-white-color);
+}
+.networks .link {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url(../pictures/icons/instagram.svg);
+  background-size: contain;
 }
