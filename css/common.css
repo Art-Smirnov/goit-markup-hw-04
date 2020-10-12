@@ -263,7 +263,8 @@ img {
   height: 44px;
   width: 44px;
 
-  background-color: rgba(255, 255, 255, 0.1);
+  --networks-bg-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--networks-bg-color);
   background-repeat: no-repeat;
   border-radius: 50%;
   background-position: center;
