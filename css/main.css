@@ -81,10 +81,6 @@
   content: '';
   height: 120px;
   outline: 1px solid red;
-
-  /* background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; */
 }
 
 .features-list .icon-attention::before {
@@ -176,4 +172,29 @@
   width: 20px;
   background-image: url(../pictures/icons/instagram.svg);
   background-size: contain;
+}
+/* Клиенты */
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list .link {
+  color: #afb1b8;
+}
+
+.clients-list .item {
+  width: calc((100% - 150px) / 6);
+}
+
+.clients-list .icon {
+  width: 170px;
+  height: 90px;
+  fill: currentColor;
+  outline: 1px solid tomato;
+}
+
+.clients-list .icon:hover {
+  fill: var(--accent-color);
 }

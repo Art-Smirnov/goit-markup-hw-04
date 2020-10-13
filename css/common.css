@@ -20,7 +20,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 .visually-hidden {
   position: absolute;
@@ -264,34 +264,20 @@ img {
 }
 
 .footer-networks .link {
-  display: block;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 44px;
   width: 44px;
 
   --networks-bg-color: rgba(255, 255, 255, 0.1);
   background-color: var(--networks-bg-color);
-  background-repeat: no-repeat;
+
   border-radius: 50%;
-  background-position: center;
 }
 
 .footer-networks .link:hover,
 .footer-networks .link:focus {
   background-color: var(--accent-color);
-}
-
-.footer-networks .insta {
-  background-image: url(../pictures/icons/footer-insta.svg);
-}
-
-.footer-networks .twitter {
-  background-image: url(../pictures/icons/footer-twitter.svg);
-}
-
-.footer-networks .fb {
-  background-image: url(../pictures/icons/footer-fb.svg);
-}
-
-.footer-networks .in {
-  background-image: url(../pictures/icons/footer-in.svg);
 }
