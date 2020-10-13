@@ -228,13 +228,18 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-contacts a {
+.footer-contacts .link {
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+  color: var(--accent-color);
 }
 
 /* Соцмережі */
