@@ -71,29 +71,19 @@
   justify-content: space-between;
 }
 
+.features-list .icon {
+  display: block;
+}
+
 .features-list .item {
   width: calc((100% - 90px) / 4);
 }
 
-.features-list .item::before {
+.features-list .thumb {
   margin-bottom: 30px;
-  display: block;
-  content: '';
-  height: 120px;
-  outline: 1px solid red;
-}
-
-.features-list .icon-attention::before {
-  background-image: url(../pictures/icons/group-1.svg);
-}
-.features-list .icon-punctuality::before {
-  background-image: url(../pictures/icons/group-2.svg);
-}
-.features-list .icon-planning::before {
-  background-image: url(../pictures/icons/group-3.svg);
-}
-.features-list .icon-tech::before {
-  background-image: url(../pictures/icons/group-4.svg);
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+  /* outline: 1px solid red; */
 }
 
 .features-container .list-title {
@@ -154,7 +144,7 @@
 
 .team .text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -166,13 +156,35 @@
 
   background: var(--primary-white-color);
 }
+
+.networks {
+  display: flex;
+  justify-content: center;
+}
+
 .networks .link {
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  background-image: url(../pictures/icons/instagram.svg);
-  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--icon-color);
+
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
 }
+
+.networks .icon {
+  fill: currentColor;
+}
+
+.networks .link:hover,
+.networks .link:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 /* Клиенты */
 
 .clients-list {
@@ -180,8 +192,18 @@
   justify-content: space-between;
 }
 
+.clients-list .clients-box {
+  display: flex;
+  justify-content: center;
+
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  /* outline: 1px solid tomato; */
+}
+
 .clients-list .link {
-  color: #afb1b8;
+  color: currentColor;
 }
 
 .clients-list .item {
@@ -189,12 +211,11 @@
 }
 
 .clients-list .icon {
-  width: 170px;
-  height: 90px;
+  display: block;
   fill: currentColor;
-  outline: 1px solid tomato;
 }
 
-.clients-list .icon:hover {
-  fill: var(--accent-color);
+.clients-list .clients-box:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }

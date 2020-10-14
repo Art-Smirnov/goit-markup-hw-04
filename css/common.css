@@ -5,6 +5,7 @@
   --primary-white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --third-bg-color: #2f303a;
+  --icon-color: #afb1b8;
 }
 /* Утиліти */
 body {
@@ -20,7 +21,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .visually-hidden {
   position: absolute;
@@ -257,6 +258,10 @@ img {
 
 .footer-networks {
   display: flex;
+}
+
+.footer-networks .icon {
+  fill: var(--primary-white-color);
 }
 
 .footer-networks .item:not(:last-child) {
