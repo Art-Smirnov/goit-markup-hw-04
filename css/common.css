@@ -146,6 +146,7 @@ img {
 
 .header-contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
